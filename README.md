@@ -34,7 +34,20 @@ Thay IP động trong source code Server nhé!
 
 ![images](https://github.com/VinhCao09/OTA-ESP32-Upload-Code-PHP/blob/main/img/4.jpg)
 
+*Xuất file binary*
 
+Để upload code qua OTA bạn cần xuất file binary, lưu ý nhớ thêm cả chương trình mẫu chờ cập nhật phiên bản mới để ESP32 có thể tiếp tục nhận được những bản cập nhật trong những phiên bản tiếp theo nhé! Bằng cách chọn file và nhấn cập nhật, ESP sẽ tiến hành cập nhật firmware mới do bạn gởi lên. File này có thể được xuất ra bằng cách Sketch > Export compiled Binary, và file .bin sẽ nằm trong thư mục của Sketch
+
+![images](https://github.com/VinhCao09/OTA-ESP32-Upload-Code-PHP/blob/main/img/5.png)
+
+
+Chạy file: index.php và cho ra giao diện như dưới: 
+![images](https://github.com/VinhCao09/OTA-ESP32-Upload-Code-PHP/blob/main/img/5.jpg)
+
+Bạn có thể chọn version để ESP32 nhận và cập nhật theo ý của mình nhé!
+
+Sau khi nhận được version mới, ESP của bạn sẽ reboot và chạy chương trình mới!!!
+Bạn
 ## 🚀 About Me
 Hello 👋I am Vinh. I'm studying HCMC University of Technology and Education
 
