@@ -7,6 +7,10 @@ Sử dụng OTA với tùy chọn dùng Arduino IDE trong quá trình phát tri�
 
 Trong tất cả các trường hợp, thì Firmware hỗ trợ OTA phải được nạp lần đầu tiên qua cổng Serial, nếu mọi thứ hoạt động trơn tru, logic ứng dụng OTA hoạt động đúng thì có thể thực hiện việc cập nhật firmware thông qua OTA.
 
+## Chú ý
+
+Có 2 phiên đoạn code là phiên bản code theo phong cách thủ tục, dùng trực tiếp các hàm nằm trong folder esp32_percent_process. Phiên bản code thứ 2 là phiên bản code dùng thư viện, mình đã build thư viện riêng, các bạn copy folder VINHCAOUPDATE vào đường dẫn mặc định của Arduino IDE là: Documents/Arduino/libraries. Sau đó để dùng thư viện thì xem code mẫu CODEMAU_DUNGTHUVIEN.ino. Cách 2 bạn mỗi lần cần cập nhật kiểm tra phiên bản mới, bạn chỉ cần gọi:  ota.checkForUpdates();
+
 ### Bảo mật
 
 Khi ESP8266/ESP32 được phép thực thi OTA, có nghĩa nó được kết nối mạng không dây và có khả năng được cập nhập Sketch mới. Cho nên khả năng ESP bị tấn công sẽ nhiều hơn và bị nạp bởi mã thực thi khác là rất cao. Để giảm khả năng bị tấn công cần xem xét bảo vệ cập nhật của bạn với một mật khẩu, cổng sử dụng cố định khác biệt, v.v…
